@@ -1,15 +1,16 @@
-var maps = [
-    ['block', 'block', 'block', 'none', 'block', 'block', 'block'],
-    ['none', 'none', 'block', 'none', 'none', 'block', 'none'],
-    ['block', 'none', 'block', 'block', 'block', 'none', 'block'],
-    ['block', 'none', 'block', 'block', 'none', 'block', 'block'],
-    ['none', 'block', 'block', 'block', 'none', 'block', 'none'],
-    ['block', 'block', 'none', 'block', 'none', 'block', 'block'],
-    ['block', 'block', 'none', 'block', 'block', 'block', 'block'],
-    ['block', 'none', 'block', 'none', 'none', 'block', 'none'],
-    ['block', 'block', 'block', 'block', 'block', 'block', 'block'],
-    ['block', 'block', 'block', 'block', 'none', 'block', 'block']
-];
+var s = ['none', 'block'],
+    maps = [
+        [s[1], s[1], s[1], s[0], s[1], s[1], s[1]],
+        [s[0], s[0], s[1], s[0], s[0], s[1], s[0]],
+        [s[1], s[0], s[1], s[1], s[1], s[0], s[1]],
+        [s[1], s[0], s[1], s[1], s[0], s[1], s[1]],
+        [s[0], s[1], s[1], s[1], s[0], s[1], s[0]],
+        [s[1], s[1], s[0], s[1], s[0], s[1], s[1]],
+        [s[1], s[1], s[0], s[1], s[1], s[1], s[1]],
+        [s[1], s[0], s[1], s[0], s[0], s[1], s[0]],
+        [s[1], s[1], s[1], s[1], s[1], s[1], s[1]],
+        [s[1], s[1], s[1], s[1], s[0], s[1], s[1]]
+    ];
 
 function setNumber(i, n) {
     for(let p = 0; p < 7; p++) {
