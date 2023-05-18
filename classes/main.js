@@ -1,4 +1,4 @@
-var d = document, dColon = 'block', oTemp, tM = ['', '', '', '', ''];
+var d = document, dColon = s[1], oTemp, tM = ['', '', '', '', ''];
 setInterval(function() {
     let t = new Date(), nTemp;
     t.toString().replace(/(\d)(\d):(\d)(\d):(\d)(\d)/, function(m, h0, h1, m0, m1, s0, s1) {
@@ -12,7 +12,7 @@ setInterval(function() {
         nTemp = s1;
         tM = [h0, h1, m0, m1, s0];
     });
-    document.getElementById('colon').style.display = dColon;
-    dColon = (oTemp == nTemp ? 'block' : 'none');
+    d.getElementById('colon').style.display = dColon;
+    dColon = (oTemp == nTemp ? s[1] : s[0]);
     oTemp = nTemp;
 }, 500);
