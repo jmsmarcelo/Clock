@@ -4,8 +4,17 @@ body {
 #Clock {
     max-width: 540px;
     width: 70%;
-    margin-top: 10%;
+    margin: 10%;
 }
 #second0, #second1 {
     opacity: 0.5;
+}
+footer p {
+    font-size: small;
+}
+footer p a {
+    text-decoration: none;
+}
+footer p a:hover {
+    text-decoration: underline;
 }
