@@ -21,21 +21,17 @@ body {
 #bg {
     fill: #FFFFFF;
 }
-#spc {
+#secondsPointer {
     fill: #961A1D;
 }
-[id^="sp-"] {
-    display: none;
-    fill: #961A1D;
-}
-[id^="mp-"] {
+[id^="sp-"]:not(#sp-00) {
     display: none;
 }
-[id^="hp-"] {
+[id^="mp-"]:not(#mp-00) {
     display: none;
 }
-#sp-00, #mp-00, #hp-00 {
-    display: block;
+[id^="hp-"]:not(#hp-00) {
+    display: none;
 }
 #hoursNumbers {
     opacity: 0.5;
