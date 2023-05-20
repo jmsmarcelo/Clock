@@ -7,6 +7,6 @@ function setNumber(i, n) {
 
 // Set position of Pointer
 function setAnalog(i, oN, n) {
-    if(typeof(oN) !== 'undefined') d.getElementById(i + oN).style.display = 'none';
+    d.getElementById(i + oN).style.display = 'none';
     d.getElementById(i + n).style.display = 'block';
 }

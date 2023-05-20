@@ -34,6 +34,9 @@ body {
 [id^="hp-"] {
     display: none;
 }
+#sp-00, #mp-00, #hp-00 {
+    display: block;
+}
 #hoursNumbers {
     opacity: 0.5;
 }
