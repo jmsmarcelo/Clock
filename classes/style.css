@@ -1,14 +1,44 @@
 body {
     text-align: center;
 }
-#Clock {
+/* Start Digital Clock style */
+#Digital {
     max-width: 540px;
     width: 70%;
     margin: 10%;
 }
-#second0, #second1 {
+#seconds0, #seconds1 {
     opacity: 0.5;
 }
+/* End Digital Clock style
+
+   Start Analog Clock style */
+#analog {
+    width: 70%;
+    max-width: 480px;
+    margin: 20px;
+}
+#bg {
+    fill: #FFFFFF;
+}
+#spc {
+    fill: #961A1D;
+}
+[id^="sp-"] {
+    display: none;
+    fill: #961A1D;
+}
+[id^="mp-"] {
+    display: none;
+}
+[id^="hp-"] {
+    display: none;
+}
+#hoursNumbers {
+    opacity: 0.5;
+}
+/* End Analog Clock style */
+
 footer p {
     font-size: small;
 }
