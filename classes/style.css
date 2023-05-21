@@ -24,13 +24,13 @@ body {
 #secondsPointer {
     fill: #961A1D;
 }
-[id^="sp-"]:not(#sp-00) {
+[id^="sp-"] {
     display: none;
 }
-[id^="mp-"]:not(#mp-00) {
+[id^="mp-"] {
     display: none;
 }
-[id^="hp-"]:not(#hp-00) {
+[id^="hp-"] {
     display: none;
 }
 #hoursNumbers {
