@@ -3,8 +3,8 @@ var d = document, h, m, s;
 Date().toString().replace(/(\d{2}):(\d{2}):(\d{2})/, function(match, hh, mm, ss) {
     h = hh, m = mm, s = ss;
     let style = document.createElement('style');
-    style.innerText = "#hp-" + hh + " { display: block; } #mp-" + mm + " { display: block; }  #sp-" + ss + " { display: block; }";
-    document.head.appendChild(style);
+    style.innerText = `#hp-${hh} { display: block; } #mp-${mm} { display: block; }  #sp-${ss} { display: block; }`;
+    d.head.appendChild(style);
 });
 
 // Format Digital Number
