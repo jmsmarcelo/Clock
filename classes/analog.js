@@ -1,3 +1,3 @@
 setInterval(function() {
     setAnalog();
-}, 500);
+}, 1000);
