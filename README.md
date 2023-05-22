@@ -1,9 +1,16 @@
-<h1>Clock</h1>
+# Clock
 
-<h2><a href="https://jmsmarcelo.github.io/Clock/digital.html">Digital Version</a></h2>
+## [Digital Version](https://jmsmarcelo.github.io/Clock/digital.html)
 
-<h2><a href="https://jmsmarcelo.github.io/Clock/analog.html">Analog Version</a></h2>
+ ![DigitalClock](./classes/digital_clock.svg)
 
-![AnalogClock](./AnalogClock.svg) **🎞️ How to I do:** ...
+- **🎞️ How I made:** ...
 
-<p>In JavaScript, SVG/Vector and HTML</p>
+## [Analog Version](https://jmsmarcelo.github.io/Clock/analog.html)
+
+ ![AnalogClock](./classes/analog_clock.svg)
+
+- **🎞️ How I made:** ...
+
+---
+- *In JavaScript, SVG/Vector and HTML*
