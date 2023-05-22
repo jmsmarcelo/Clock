@@ -14,12 +14,11 @@ function setNumber(i, n) {
         d.getElementById(i + p).style.display = maps[n][p];
     }
 }
-function setAnalog(i, oN, n) {
-    d.getElementById(i + oN).style.display = s[0];
-    d.getElementById(i + n).style.display = s[1];
+function setAnalog(i, r, n) {
+    d.getElementById(i).style.transform = 'rotate(' + (r * n) + 'deg)';
 }
 
 t = getNow('a');
 let style = document.createElement('style');
-style.innerText = `#hp-${t[0]} { display: block; } #mp-${t[1]} { display: block; }  #sp-${t[2]} { display: block; }`;
+style.innerText = `#hp { transform: rotate(${(30 * t[0])}deg); } #mp { transform: rotate(${(6 * t[1])}deg); } #sp { transform: rotate(${(6 * t[2])}deg); }`;
 d.head.appendChild(style);

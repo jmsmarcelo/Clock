@@ -21,17 +21,11 @@ body {
 #bg {
     fill: #FFFFFF;
 }
-#secondsPointer {
+#sp {
     fill: #961A1D;
 }
-[id^="sp-"] {
-    display: none;
-}
-[id^="mp-"] {
-    display: none;
-}
-[id^="hp-"] {
-    display: none;
+#hp, #mp, #sp {
+    transform-origin: center;
 }
 #hoursNumbers {
     opacity: 0.5;
