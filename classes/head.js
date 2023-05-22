@@ -14,11 +14,21 @@ function setNumber(i, n) {
         d.getElementById(i + p).style.display = maps[n][p];
     }
 }
-function setAnalog(i, r, n) {
-    d.getElementById(i).style.transform = 'rotate(' + (r * n) + 'deg)';
+function setAnalog() {
+    toDeg();
+    setRot('hp', t[0]); setRot('mp', t[1]); setRot('sp', t[2]);
+}
+function toDeg() {
+    t = getNow('a');
+    t[0] = ((t[0] * 30) + (t[1] * 0.5));
+    t[1] = ((t[1] * 6) + (t[2] * 0.1));
+    t[2] = (t[2] * 6);
+}
+function setRot(i, n) {
+    d.getElementById(i).style.transform = 'rotate(' + (n) + 'deg)';
 }
 
-t = getNow('a');
+toDeg();
 let style = document.createElement('style');
-style.innerText = `#hp { transform: rotate(${(30 * t[0])}deg); } #mp { transform: rotate(${(6 * t[1])}deg); } #sp { transform: rotate(${(6 * t[2])}deg); }`;
+style.innerText = `#hp { transform: rotate(${t[0]}deg); } #mp { transform: rotate(${t[1]}deg); } #sp { transform: rotate(${t[2]}deg); }`;
 d.head.appendChild(style);
