@@ -1,21 +1,25 @@
-var d = document, h, m, s;
+var d = document, t = [], s = ['none', 'block'], dColon = s[1], oTemp;
 
-Date().toString().replace(/(\d{2}):(\d{2}):(\d{2})/, function(match, hh, mm, ss) {
-    h = hh, m = mm, s = ss;
-    let style = document.createElement('style');
-    style.innerText = `#hp-${hh} { display: block; } #mp-${mm} { display: block; }  #sp-${ss} { display: block; }`;
-    d.head.appendChild(style);
-});
-
-// Format Digital Number
+function getNow(v) {
+    let now = [];
+    if(typeof(v) === 'undefined') v = '';
+    Date().toString().replace(/(\d)(\d):(\d)(\d):(\d)(\d)/, function(m, hh, h, mm, m, ss, s) {
+        if(v == 'a') now = [hh + h, mm + m, ss + s];
+        else now = [hh, h, mm, m, ss, s];
+    });
+    return now;
+}
 function setNumber(i, n) {
     for(let p = 0; p < 7; p++) {
         d.getElementById(i + p).style.display = maps[n][p];
     }
 }
-
-// Set position of Pointer
 function setAnalog(i, oN, n) {
-    d.getElementById(i + oN).style.display = 'none';
-    d.getElementById(i + n).style.display = 'block';
+    d.getElementById(i + oN).style.display = s[0];
+    d.getElementById(i + n).style.display = s[1];
 }
+
+t = getNow('a');
+let style = document.createElement('style');
+style.innerText = `#hp-${t[0]} { display: block; } #mp-${t[1]} { display: block; }  #sp-${t[2]} { display: block; }`;
+d.head.appendChild(style);

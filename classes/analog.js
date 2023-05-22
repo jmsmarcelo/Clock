@@ -1,7 +1,7 @@
 setInterval(function() {
-    Date().toString().replace(/(\d{2}):(\d{2}):(\d{2})/, function(match, hh, mm, ss) {
-        if(h != hh) setAnalog('hp-', h, hh); h = hh;
-        if(m != mm) setAnalog('mp-', m, mm); m = mm;
-        setAnalog('sp-', s, ss); s = ss;
-    });
+    n = getNow('a');
+    if(t[0] != n[0]) setAnalog('hp-', t[0], n[0]);
+    if(t[1] != n[1]) setAnalog('mp-', t[1], n[1]);
+    setAnalog('sp-', t[2], n[2]);
+    t = n;
 }, 500);
