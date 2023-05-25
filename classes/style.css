@@ -2,7 +2,7 @@ body {
     text-align: center;
 }
 /* Start Digital Clock style */
-#Digital {
+#digital {
     max-width: 540px;
     width: 70%;
     margin: 10%;
@@ -27,7 +27,7 @@ body {
 #hp, #mp, #sp {
     transform-origin: center;
 }
-#hoursNumbers {
+#hours-numbers {
     opacity: 0.5;
 }
 /* End Analog Clock style */
